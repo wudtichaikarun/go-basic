@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/wudtichaikarun/hello/book"
+)
 
 func main() {
-	fmt.Println("Hello , Romantic")
+	b := book.New()
+
+	fmt.Printf("%T %v\n", b, b)
+
+	b.Name = "Romantic"
+	fmt.Printf("%T %v\n", b, b)
 }
